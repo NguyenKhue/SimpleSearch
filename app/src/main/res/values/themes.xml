@@ -7,4 +7,8 @@
         <item name="colorPrimaryVariant">@color/blue_light_variant</item>
     </style>
 
+    <style name="Widget.App.Button.FilledButton.IconOnly" parent="Widget.Material3.Button.IconButton.Filled">
+        <item name="android:minWidth">48dp</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
 </resources>

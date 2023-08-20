@@ -15,39 +15,41 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ImageView
+        <Button
             android:id="@+id/search_image_view"
+            style="@style/Widget.App.Button.FilledButton.IconOnly"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:src="@drawable/ic_search"
+            app:backgroundTint="@android:color/transparent"
+            app:icon="@drawable/ic_back"
+            app:iconTint="#ffff"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="ContentDescription" />
 
-        <ImageView
+        <Button
             android:id="@+id/clear_search_query"
+            style="@style/Widget.App.Button.FilledButton.IconOnly"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:background="?attr/selectableItemBackground"
-            android:padding="8dp"
-            android:src="@drawable/ic_clear"
             android:visibility="invisible"
+            app:backgroundTint="@android:color/transparent"
+            app:icon="@drawable/ic_clear"
+            app:iconTint="#ffff"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="ContentDescription" />
 
-        <ImageView
+        <Button
             android:id="@+id/voice_search_query"
+            style="@style/Widget.App.Button.FilledButton.IconOnly"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:background="?attr/selectableItemBackground"
-            android:padding="8dp"
-            android:src="@drawable/ic_mic"
+            app:backgroundTint="@android:color/transparent"
+            app:icon="@drawable/ic_mic"
+            app:iconTint="#ffff"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -56,12 +58,11 @@
         <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/search_edit_text"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="24dp"
+            android:layout_height="match_parent"
             android:background="@android:color/transparent"
             android:hint="@string/search_articles_hint"
+            android:imeOptions="actionSearch"
             android:inputType="text"
-            android:paddingTop="8dp"
             android:textAppearance="?attr/textAppearanceHeadline6"
             app:layout_constraintBottom_toBottomOf="@id/search_image_view"
             app:layout_constraintEnd_toStartOf="@id/voice_search_query"
